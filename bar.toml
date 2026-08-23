@@ -1,0 +1,13 @@
+[bar.default]
+enabled = true
+position = "bottom"
+scale = 2.0
+widget_spacing = 20
+margin_ends = 0
+
+font_family = "JetBrainsMono Nerd Font"
+
+start = [ "launcher", "workspaces" ]
+
+[widget.clock]
+format = "{:%H:%M} - {:%Y-%m-%d}"

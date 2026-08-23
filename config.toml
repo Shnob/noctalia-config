@@ -1,0 +1,8 @@
+[theme]
+builtin = "Eldritch"
+
+[wallpaper]
+enabled = true
+
+[wallpaper.default]
+path = "/home/jake/.config/niri/default-background.png"
