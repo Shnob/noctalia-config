@@ -2,12 +2,29 @@
 enabled = true
 position = "bottom"
 scale = 2.0
-widget_spacing = 20
+widget_spacing = 10
 margin_ends = 0
+concave_edge_corners = false
+radius = 0
+thickness = 40
+capsule = true
+capsule_radius = 4
 
-font_family = "JetBrainsMono Nerd Font"
+# These both go hard
+font_family = "Tex Gyre Adventor"
+# font_family = "Unifont"
+font_weight = 700
 
 start = [ "launcher", "workspaces" ]
 
+[widget.workspaces]
+capsule = false
+
 [widget.clock]
-format = "{:%H:%M} - {:%Y-%m-%d}"
+format = "{:%H:%M:%S}   {:%Y-%m-%d}"
+
+[widget.media]
+max_length = 440
+
+[widget.network]
+show_label = false

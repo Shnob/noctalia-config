@@ -1,2 +1,9 @@
 [shell]
 polkit_agent = true
+
+[shell.launcher]
+app_grid = true
+categories = false
+
+[accessibility]
+ui_scale = 1.5
