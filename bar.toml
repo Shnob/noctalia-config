@@ -2,20 +2,21 @@
 enabled = true
 position = "bottom"
 scale = 2.0
-widget_spacing = 10
+widget_spacing = 15
 margin_ends = 0
+padding = 17
 concave_edge_corners = false
 radius = 0
 thickness = 40
 capsule = true
 capsule_radius = 4
 
-# These both go hard
-font_family = "Tex Gyre Adventor"
-# font_family = "Unifont"
-font_weight = 700
+font_family = "JetBrains Mono Nerd Font"
+font_weight = 800
 
-start = [ "launcher", "workspaces" ]
+start  = [ "workspaces", "media" ]
+center = [ "clock" ]
+end    = [ "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "sysmon_cpu", "sysmon_ram", "sysmon_disk" ]
 
 [widget.workspaces]
 capsule = false
@@ -24,7 +25,28 @@ capsule = false
 format = "{:%H:%M:%S}   {:%Y-%m-%d}"
 
 [widget.media]
+font_family = "Tex Gyre Adventor"
+font_weight = 100
 max_length = 440
+art_size = 15
+title_scroll = "on_hover"
 
 [widget.network]
 show_label = false
+
+# TODO: Write custom sysmon module similar to old waybar config's
+[widget.sysmon_cpu]
+type = "sysmon"
+stat = "cpu_usage"
+glyph = "cpu"
+
+[widget.sysmon_ram]
+type = "sysmon"
+stat = "ram_used"
+glyph = "u+eef7"
+
+[widget.sysmon_disk]
+type = "sysmon"
+stat = "disk_free"
+highlight_color = "on_surface"
+glyph = "u+fa12"
