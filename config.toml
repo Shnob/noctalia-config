@@ -5,4 +5,5 @@ builtin = "Eldritch"
 enabled = true
 
 [wallpaper.default]
+enabled = true
 path = "/home/jake/.config/niri/default-background.png"

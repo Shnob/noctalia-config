@@ -11,7 +11,7 @@ thickness = 40
 capsule = true
 capsule_radius = 4
 
-font_family = "JetBrains Mono Nerd Font"
+font_family = "Mononoki Nerd Font"
 font_weight = 800
 
 start  = [ "workspaces", "media" ]
